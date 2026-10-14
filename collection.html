@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore the OFFSCRIPT streetwear collection.">
+  <title>The Collection — OFFSCRIPT</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="OFFSCRIPT home">OFFSCRIPT<span>®</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"><span class="sr-only">Toggle navigation</span><span></span><span></span></button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Main navigation"><a href="index.html">New drops</a><a class="active" href="collection.html">Shop all</a><a href="index.html#story">About</a></nav>
+    <div class="header-actions"><button class="icon-button search-toggle" type="button" aria-label="Open search">⌕</button><a class="text-action" href="index.html#newsletter">Join us</a><button class="bag-button" type="button" aria-label="Shopping bag, 0 items">Bag <span id="bag-count">0</span></button></div>
+  </header>
+
+  <main id="main" class="collection-main">
+    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Shop all</span></div>
+    <section class="collection-intro"><div><p class="eyebrow">Consider this your sign</p><h1>The collection<span class="dot">.</span></h1><p>Timeless pieces for every mood. Streetwear essentials designed for all genders, all stories.</p></div><div class="collection-stamp"><span>DROP</span><strong>01</strong><span>BE YOUR OWN</span></div></section>
+    <div class="collection-toolbar"><button id="filter-toggle" class="filter-toggle" type="button" aria-expanded="false" aria-controls="filter-panel">＋ Filters</button><span id="result-count">8 pieces</span><label class="sort-label" for="sort-select">Sort by <select id="sort-select"><option value="featured">Featured</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option><option value="name">Name A–Z</option></select></label></div>
+    <div class="shop-layout">
+      <aside class="filter-panel" id="filter-panel" aria-label="Product filters">
+        <div class="filter-group"><h2>Category</h2><label><input type="checkbox" name="category" value="tees"> T-shirts</label><label><input type="checkbox" name="category" value="hoodies"> Hoodies & sweatshirts</label><label><input type="checkbox" name="category" value="pants"> Pants</label><label><input type="checkbox" name="category" value="statement"> Statement pieces</label></div>
+        <div class="filter-group"><h2>Size</h2><div class="size-options"><label><input type="checkbox" name="size" value="XS"><span>XS</span></label><label><input type="checkbox" name="size" value="S"><span>S</span></label><label><input type="checkbox" name="size" value="M"><span>M</span></label><label><input type="checkbox" name="size" value="L"><span>L</span></label><label><input type="checkbox" name="size" value="XL"><span>XL</span></label></div></div>
+        <div class="filter-group"><h2>Price</h2><label><input type="radio" name="price" value="all" checked> All prices</label><label><input type="radio" name="price" value="under2000"> Under ₹2,000</label><label><input type="radio" name="price" value="over2000"> ₹2,000 and above</label></div>
+        <button id="clear-filters" class="clear-filters" type="button">Clear all filters ↺</button>
+      </aside>
+      <section class="collection-products" aria-label="Products">
+        <div class="product-grid collection-grid" id="collection-products">
+          <article class="product-card" data-name="Not Just a Phase Tee" data-price="1499" data-category="tees" data-size="XS S M L XL"><a href="#" class="product-image product-tee" aria-label="Not Just a Phase Tee"><span class="new-tag">New in</span><button class="heart" type="button" aria-label="Save Not Just a Phase tee" aria-pressed="false">♡</button><span class="garment tee-shape"></span></a><div class="product-info"><div><h3>Not Just a Phase Tee</h3><p>Charcoal / Cotton</p></div><span>₹1,499</span></div><button class="add-button" type="button" data-add>Quick add +</button></article>
+          <article class="product-card" data-name="Offscript Hoodie" data-price="2099" data-category="hoodies" data-size="S M L XL"><a href="#" class="product-image product-hoodie" aria-label="Offscript Hoodie"><button class="heart" type="button" aria-label="Save Offscript hoodie" aria-pressed="false">♡</button><span class="garment hoodie-shape"></span></a><div class="product-info"><div><h3>Offscript Hoodie</h3><p>Oat / Heavyweight fleece</p></div><span>₹2,099</span></div><button class="add-button" type="button" data-add>Quick add +</button></article>
+          <article class="product-card" data-name="Utility Cargo Pants" data-price="2499" data-category="pants" data-size="S M L XL"><a href="#" class="product-image product-cargo" aria-label="Utility Cargo Pants"><button class="heart" type="button" aria-label="Save cargo pants" aria-pressed="false">♡</button><span class="garment cargo-shape"></span></a><div class="product-info"><div><h3>Utility Cargo Pants</h3><p>Olive / Relaxed fit</p></div><span>₹2,499</span></div><button class="add-button" type="button" data-add>Quick add +</button></article>
+          <article class="product-card" data-name="Varsity Jacket" data-price="3499" data-category="statement" data-size="S M L XL"><a href="#" class="product-image product-jacket" aria-label="Varsity Jacket"><button class="heart" type="button" aria-label="Save varsity jacket" aria-pressed="false">♡</button><span class="garment jacket-shape"></span></a><div class="product-info"><div><h3>Varsity Jacket</h3><p>Burgundy / Limited drop</p></div><span>₹3,499</span></div><button class="add-button" type="button" data-add>Quick add +</button></article>
+          <article class="product-card" data-name="Everyday Rib Tee" data-price="999" data-category="tees" data-size="XS S M L XL"><a href="#" class="product-image product-tee light-tee" aria-label="Everyday Rib Tee"><button class="heart" type="button" aria-label="Save Everyday Rib Tee" aria-pressed="false">♡</button><span class="garment tee-shape"></span></a><div class="product-info"><div><h3>Everyday Rib Tee</h3><p>Stone / Soft cotton</p></div><span>₹999</span></div><button class="add-button" type="button" data-add>Quick add +</button></article>
+          <article class="product-card" data-name="Studio Sweatshirt" data-price="1799" data-category="hoodies" data-size="S M L XL"><a href="#" class="product-image product-hoodie dark-hoodie" aria-label="Studio Sweatshirt"><button class="heart" type="button" aria-label="Save Studio Sweatshirt" aria-pressed="false">♡</button><span class="garment hoodie-shape"></span></a><div class="product-info"><div><h3>Studio Sweatshirt</h3><p>Charcoal / Relaxed fit</p></div><span>₹1,799</span></div><button class="add-button" type="button" data-add>Quick add +</button></article>
+          <article class="product-card" data-name="Everyday Cargo" data-price="2199" data-category="pants" data-size="S M L XL"><a href="#" class="product-image product-cargo sand-cargo" aria-label="Everyday Cargo"><button class="heart" type="button" aria-label="Save Everyday Cargo" aria-pressed="false">♡</button><span class="garment cargo-shape"></span></a><div class="product-info"><div><h3>Everyday Cargo</h3><p>Sand / Utility fit</p></div><span>₹2,199</span></div><button class="add-button" type="button" data-add>Quick add +</button></article>
+          <article class="product-card" data-name="After Hours Overshirt" data-price="2699" data-category="statement" data-size="S M L XL"><a href="#" class="product-image product-jacket overshirt" aria-label="After Hours Overshirt"><button class="heart" type="button" aria-label="Save After Hours Overshirt" aria-pressed="false">♡</button><span class="garment jacket-shape"></span></a><div class="product-info"><div><h3>After Hours Overshirt</h3><p>Deep olive / Layering piece</p></div><span>₹2,699</span></div><button class="add-button" type="button" data-add>Quick add +</button></article>
+        </div>
+        <p class="empty-state" id="empty-state" hidden>No pieces match those filters. Try clearing some options.</p>
+        <div class="load-more-wrap"><button class="button button-outline" id="load-more" type="button">Load more pieces ↓</button></div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="footer-top"><a class="wordmark" href="index.html">OFFSCRIPT<span>®</span></a><p>Wear outside the lines.</p><div class="footer-links"><a href="index.html#story">Our story</a><a href="collection.html">Shop</a><a href="index.html#newsletter">Contact</a><a href="index.html#newsletter">Instagram ↗</a></div></div><div class="footer-bottom"><span>© 2026 OFFSCRIPT STUDIO</span><span>Concept design for a junior web design project</span><span>Privacy · Terms</span></div></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
